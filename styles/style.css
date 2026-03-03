@@ -1,0 +1,196 @@
+
+ #tituloPrincipal{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align:center;
+    padding: 10px
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #070c2b;
+    color: white;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background:  #070c2b;
+}
+
+#units {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* ================= TOPO ================= */
+
+.top-area {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.top-area h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#pesquisa {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#pesquisa input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+#pesquisa button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background: #4a63ff;
+    color: white;
+    cursor: pointer;
+}
+
+.caixaMaior{
+    display:flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+.caixa1{
+    width: 68%;
+}
+.caixa2{
+    width: 28%;
+}
+/* ================= CONTAINER PRINCIPAL ================= */
+
+.weather-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* ================= COLUNA ESQUERDA ================= */
+
+.left section {
+    background: #10194d;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* Clima atual */
+.current-weather {
+    background: linear-gradient(135deg, #4a63ff, #6f7cff);
+}
+
+#clima {
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+/* Detalhes */
+.details ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 15px;
+}
+
+.details li {
+    background: #1a2466;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Daily forecast */
+.daily ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 15px;
+}
+
+.daily li {
+    background: #1a2466;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 5px;
+}
+
+/* ================= COLUNA DIREITA ================= */
+
+.right section {
+    background: #10194d;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.hourly select {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 6px;
+    border: none;
+}
+
+.hourly ul {
+    list-style: none;
+}
+
+.hourly li {
+    background: #1a2466;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ================= RESPONSIVIDADE ================= */
+
+@media (max-width: 900px) {
+    .weather-container {
+        grid-template-columns: 1fr;
+    }
+
+    .details ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .daily ul {
+        flex-wrap: wrap;
+    }
+
+    .daily li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    #pesquisa {
+        flex-direction: column;
+    }
+
+    #pesquisa input {
+        width: 100%;
+    }
+}
