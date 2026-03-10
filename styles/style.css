@@ -13,6 +13,10 @@ body {
     min-height: 100vh;
 }
 
+/* *{
+    margin: 0;
+    padding: 0;
+} */
 /* ================= HEADER ================= */
 
 header {
@@ -21,6 +25,9 @@ header {
     align-items: center;
     padding: 20px 40px;
     background:  #070c2b;
+}
+#imagemConfig{
+    width: 2%;
 }
 
 #units {
@@ -71,9 +78,43 @@ header {
 }
 .caixa1{
     width: 68%;
+
 }
 .caixa2{
     width: 28%;
+}
+#caixaPrincipal1{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#caixaPrincipal2{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#caixaPrincipal4{
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+#caixaPrincipal5{
+    /* display: flex;
+    margin: auto;
+    gap: 1rem; */
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.listaHora li{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.listaHora p{
+    margin:0;
+
 }
 /* ================= CONTAINER PRINCIPAL ================= */
 

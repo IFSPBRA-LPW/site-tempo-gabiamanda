@@ -9,9 +9,9 @@
 <body>
     <header>
         <!--icone de config.-->
-        <p>Weather Now</p>
+        <p>☀️Weather Now</p>
         <select id="units">
-                <option>Units</option>
+                <option>⚙️Units</option>
                 <option>Opção 1</option>
                 <option>Opção 1</option>
             </select>
@@ -25,16 +25,17 @@
         <div class="caixaMaior">
       
          <div class="caixa1">
-            <section>
-                <div>
+            <section id="caixaPrincipal1">
+                <div id="caixaEsquerda">
                     <h2>Berlin, Germany</h2>
                     <p>Tuesday, Aug 5, 2025</p>
                 </div>
                 <div>
                 <p id="clima">20°</p>
+                </div>
             </section>
 
-            <section>
+            <section id="caixaPrincipal2">
                 <ul>
                     <li> Feels Like <br> 18°</li>
                     <li> Humidity <br> 46% </li>
@@ -43,7 +44,7 @@
                 </ul>
             </section>
 
-            <section>
+            <section id="caixaPrincipal3">
                 <p>Daily forecast</p>
                 <ul>
                     <li>Tue <br> <!-- icone --> <br> 20° 14°</li>
@@ -58,23 +59,28 @@
          </div>
 
          <section class="caixa2">
-            <p>Hourly forecast</p>
-            <select>
+            <div id="caixaPrincipal4">
+            <div><p>Hourly forecast</p></div>
+
+            <div><select>
                 <option>Tuesday</option>
                 <option>Opção 1</option>
                 <option>Opção 1</option>
-            </select>
+            </select> </div>
+            </div>
             
-            <ul>
-                <li> <!--icone --> 3 PM <p>20°</p></li> 
-                <li> <!--icone --> 4 PM <p>20°</p></li> 
-                <li> <!--icone --> 5 PM <p>20°</p></li> 
-                <li> <!--icone --> 6 PM <p>19°</p></li> 
-                <li> <!--icone --> 7 PM <p>19°</p></li> 
-                <li> <!--icone --> 8 PM <p>18°</p></li> 
-                <li> <!--icone --> 9 PM <p>17°</p></li> 
-                <li> <!--icone --> 10 PM <p>17°</p></li> 
-            </ul>
+            <div id="caixaPrincipal5">
+            <ul class="listaHora">
+                <li> <div> ☁️3 PM</div> <p>20°</p></li>
+                <li><div> 🌤️4 PM</div> <p>20°</p></li> 
+                <li><div> ☀️5 PM</div> <p>20°</p></li> 
+                <li><div> ☁️6 PM</div> <p>19°</p></li> 
+                <li><div> 🌧️7 PM</div> <p>19°</p></li> 
+                <li><div> 💨8 PM</div> <p>18°</p></li> 
+                <li><div> 🌧️9 PM</div> <p>17°</p></li> 
+                <li><div> ☁️10 PM</div> <p>17°</p></li> 
+                </ul>
+            </div>
          </section>
         </div>
     </main>
