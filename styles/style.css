@@ -14,10 +14,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
-
 header{
     display:flex;
     justify-content:space-between;
@@ -27,7 +23,6 @@ header{
 
 header p{
     font-size:1.5rem;
-  
 }
 
 header select{
@@ -38,8 +33,6 @@ header select{
     color:white;
 }
 
-
-
 #titulo_principal{
     text-align:center;
     margin-bottom:30px;
@@ -48,14 +41,12 @@ header select{
 
 }
 
-
 #pesquisa{
     display:flex;
     justify-content:center;
     gap:10px;
     margin-bottom:40px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #pesquisa input{
@@ -67,7 +58,6 @@ header select{
     color:white;
     font-size:16px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #pesquisa input::placeholder{
@@ -83,13 +73,11 @@ header select{
     cursor:pointer;
     transition:0.3s;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 #pesquisa button:hover{
     background:#8e3bdb;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 
@@ -144,7 +132,6 @@ padding:0;
 
 max-width:900px;
 width:100%;
-
 }
 
 .info-clima li{
