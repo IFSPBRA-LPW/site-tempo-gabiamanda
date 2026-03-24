@@ -6,10 +6,14 @@ function renderBannerInfo(data) {
   const banner = document.getElementById("banner");
 
   banner.innerHTML = `
-    <h1>${data.city}, ${data.country}</h1>
+  <div>
+    <h2>${data.city}, ${data.country}</h2>
     <p>${data.date}</p>
-    <h2>${data.icon} ${data.temperature}°C</h2>
-  `;
+    </div>
+
+    <div>
+    <p id="clima">${data.icon} ${data.temperature}</p>
+    </div>`;
 }
 
 // Infos do dia
@@ -17,11 +21,25 @@ function renderDayInfo(data) {
   const container = document.getElementById("day-info");
 
   container.innerHTML = `
-    <p>Sensação térmica: ${data.feelsLike}°C</p>
-    <p>Umidade: ${data.humidity}%</p>
-    <p>Vento: ${data.wind} km/h</p>
-    <p>Precipitação: ${data.precipitation}%</p>
-  `;
+    <li>
+      <p>Feels Like</p>
+      <span>${data.feelsLike}°C</span>
+    </li>
+
+    <li>
+      <p>Humidity</p>
+      <span>${data.humidity}%</span>
+    </li>
+
+    <li>
+      <p>Wind</p>
+      <span>${data.wind}Km/h</span>
+    </li>
+
+    <li>
+      <p>Precipitation</p>
+      <span>${data.precipitation}mm</span>
+    </li>`;
 }
 
 // Próximos dias
@@ -34,10 +52,7 @@ function renderDaily(dailyData) {
     card.classList.add("day-card");
 
     card.innerHTML = `
-      <p>${day.day}</p>
-      <p>${day.icon}</p>
-      <p>${day.max}° / ${day.min}°</p>
-    `;
+      <li>${day.day} <br> ${day.icon} <br> ${day.max}° / ${day.min}°</li>`;
 
     container.appendChild(card);
   });
@@ -53,9 +68,8 @@ function renderHourly(hourlyData) {
     card.classList.add("hour-card");
 
     card.innerHTML = `
-      <p>${hour.time}</p>
-      <p>${hour.temp}°C</p>
-    `;
+      <li>${hour.icon} ${hour.time} 
+      <span>${hour.temp}°C</span></li>`;
 
     container.appendChild(card);
   });
